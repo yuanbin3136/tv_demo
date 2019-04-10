@@ -1,6 +1,5 @@
-package com.wind.yuanbin.testchannel;
+package com.wind.yuanbin.demo;
 
-import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
@@ -11,7 +10,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
+
+import com.wind.yuanbin.demo.utils.L;
 
 public class ChannelActivity extends AppCompatActivity {
     MyAdapter adapter;

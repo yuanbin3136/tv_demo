@@ -1,4 +1,4 @@
-package com.wind.yuanbin.testchannel;
+package com.wind.yuanbin.demo.utils;
 
 import android.util.Log;
 

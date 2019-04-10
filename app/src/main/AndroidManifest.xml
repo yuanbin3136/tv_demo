@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.wind.yuanbin.testchannel">
+    package="com.wind.yuanbin.demo">
 
     <application
         android:allowBackup="true"
@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ChannelActivity">
+        <activity android:name="com.wind.yuanbin.demo.waterfall.WaterfallActivity"></activity>
+        <activity android:name="com.wind.yuanbin.demo.ChannelActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

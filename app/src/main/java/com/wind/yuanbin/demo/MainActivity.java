@@ -1,4 +1,4 @@
-package com.wind.yuanbin.testchannel;
+package com.wind.yuanbin.demo;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
