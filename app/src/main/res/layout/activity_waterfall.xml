@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".waterfall.WaterfallActivity">
-
-</android.support.constraint.ConstraintLayout>
+    <com.wind.yuanbin.demo.waterfall.NewRecycleView_MoreScroll
+        android:id="@+id/rv_water"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></com.wind.yuanbin.demo.waterfall.NewRecycleView_MoreScroll>
+</FrameLayout>
