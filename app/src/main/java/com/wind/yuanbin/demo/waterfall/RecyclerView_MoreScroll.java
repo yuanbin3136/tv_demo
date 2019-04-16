@@ -8,16 +8,16 @@ import android.util.AttributeSet;
 import com.wind.yuanbin.demo.utils.L;
 
 
-public class NewRecycleView_MoreScroll extends RecyclerView {
-    public NewRecycleView_MoreScroll(Context context) {
+public class RecyclerView_MoreScroll extends RecyclerView {
+    public RecyclerView_MoreScroll(Context context) {
         super(context);
     }
 
-    public NewRecycleView_MoreScroll(Context context, @Nullable AttributeSet attrs) {
+    public RecyclerView_MoreScroll(Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
     }
 
-    public NewRecycleView_MoreScroll(Context context, @Nullable AttributeSet attrs, int defStyle) {
+    public RecyclerView_MoreScroll(Context context, @Nullable AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
     }
 

@@ -5,8 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".waterfall.WaterfallActivity">
-    <com.wind.yuanbin.demo.waterfall.NewRecycleView_MoreScroll
+    <com.wind.yuanbin.demo.waterfall.RecyclerView_MoreScroll
         android:id="@+id/rv_water"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"></com.wind.yuanbin.demo.waterfall.NewRecycleView_MoreScroll>
+        android:layout_height="match_parent"></com.wind.yuanbin.demo.waterfall.RecyclerView_MoreScroll>
 </FrameLayout>

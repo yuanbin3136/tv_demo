@@ -2,4 +2,8 @@
 <resources>
     <dimen name="water_text_hei">20dp</dimen>
     <dimen name="dp_dec">10dp</dimen>
+    <dimen name="water_hei2">185dp</dimen>
+    <dimen name="water_hei3">130dp</dimen>
+    <dimen name="water_Decoration2">25dp</dimen>
+    <dimen name="water_Decoration3">5dp</dimen>
 </resources>

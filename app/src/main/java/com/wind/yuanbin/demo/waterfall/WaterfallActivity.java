@@ -21,7 +21,7 @@ import java.util.Map;
  */
 public class WaterfallActivity extends AppCompatActivity {
 
-    NewRecycleView_MoreScroll rv_water;
+    RecyclerView_MoreScroll rv_water;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -77,7 +77,32 @@ public class WaterfallActivity extends AppCompatActivity {
 
             }
         });
-        rv_water.setAdapter(waterFallAdapter);
+//        rv_water.setAdapter(waterFallAdapter);
+        WaterFallAdapter2 adapter2 = new WaterFallAdapter2();
+        adapter2.datas = WaterFallAdapter2.getTestData();
+        adapter2.setOnItemLis(new WaterFallAdapter2.OnItemAllLis() {
+            @Override
+            public void onFocus(View v, boolean hasFocus, int menuPosition, int position) {
+                if (hasFocus){
+                    v.animate().scaleX(1.2f);
+                    v.animate().scaleY(1.2f);
+                }else {
+                    v.animate().scaleX(1.0f);
+                    v.animate().scaleY(1.0f);
+                }
+            }
+
+            @Override
+            public boolean onKey(View v, int keyCode, KeyEvent event, int menuPosition, int position) {
+                return false;
+            }
+
+            @Override
+            public void onClick(View v, int menuPosition, int position) {
+
+            }
+        });
+        rv_water.setAdapter(adapter2);
     }
     WaterFallAdapter waterFallAdapter;
 

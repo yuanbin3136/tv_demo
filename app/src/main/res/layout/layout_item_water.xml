@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent">
+    <ImageView
+        android:id="@+id/iv_item_water"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <ImageView
+        android:id="@+id/iv_item_water_icon"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"/>
+    <TextView
+        android:id="@+id/tv_item_water"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/water_text_hei"
+        android:layout_alignParentBottom="true"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:textSize="16sp"/>
+</RelativeLayout>
