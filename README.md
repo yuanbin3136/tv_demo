@@ -13,7 +13,7 @@
 * [md](./app/md/RecyclerView_moreScrll.md)
 
 ### 2.枚举类型，把多模块的数据统一管理
-
+* [md](./app/md/使用枚举配置多种条目类型.md)
 ### 3.在RecyclerView_MoreScroll(竖)中 嵌套 RecyclderView(Grid)的结构
 
 ### 4.焦点条目放大时被其他条目阻挡的问题//未完成，可能从绘制顺序上处理，还有父布局的父布局中修改clipChildren属性。
