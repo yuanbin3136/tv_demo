@@ -86,6 +86,7 @@ public class WaterfallActivity extends AppCompatActivity {
                 if (hasFocus){
                     v.animate().scaleX(1.2f);
                     v.animate().scaleY(1.2f);
+                    v.bringToFront();
                 }else {
                     v.animate().scaleX(1.0f);
                     v.animate().scaleY(1.0f);

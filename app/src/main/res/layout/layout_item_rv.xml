@@ -8,7 +8,7 @@
         android:layout_height="20dp"
         android:text="TextView" />
 
-    <android.support.v7.widget.RecyclerView
+    <com.wind.yuanbin.demo.waterfall.RecyclerView_FocusChild
         android:id="@+id/rv_rv_item"
         android:layout_marginTop="25dp"
         android:layout_width="match_parent"

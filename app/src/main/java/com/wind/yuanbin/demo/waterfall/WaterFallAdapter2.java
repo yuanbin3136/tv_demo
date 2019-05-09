@@ -9,6 +9,7 @@ import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -109,6 +110,14 @@ public class WaterFallAdapter2 extends RecyclerView.Adapter<WaterFallAdapter2.Wa
     @Override
     public void onBindViewHolder(@NonNull WaterViewHolder waterViewHolder, int i) {
         waterViewHolder.setTitle(datas.get(i).title);
+
+        // 可以不显示模块小标题
+        if (datas.get(i).title.contains("2")||datas.get(i).title.contains("4")||datas.get(i).title.contains("6")){
+            FrameLayout.LayoutParams lp = (FrameLayout.LayoutParams)
+                    waterViewHolder.itemView.findViewById(R.id.rv_rv_item).getLayoutParams();
+            lp.topMargin = waterViewHolder.itemView.getResources().getDimensionPixelSize(R.dimen.water_Decoration3);
+        }
+
         int type = getItemViewType(i);
         WaterViewAdapter adapter = waterViewHolder.getWaterViewAdapter();
         if (adapter == null){
@@ -163,7 +172,7 @@ public class WaterFallAdapter2 extends RecyclerView.Adapter<WaterFallAdapter2.Wa
     static class OneViewHolder extends WaterViewHolder{
         public static final int ResID = R.layout.layout_item_rv;
         TextView textView;
-        RecyclerView rv_rv_item;
+        RecyclerView_FocusChild rv_rv_item;
         public OneViewHolder(View itemView) {
             super(itemView);
             textView = itemView.findViewById(R.id.tv_rv_item);
