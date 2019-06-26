@@ -5,7 +5,8 @@
     <ImageView
         android:id="@+id/iv_water_one"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:src="@mipmap/ic_launcher"/>
     <ImageView
         android:id="@+id/iv_water_one_icon"
         android:layout_width="90dp"

@@ -16,6 +16,7 @@ import android.widget.TextView;
 
 import com.wind.yuanbin.demo.App;
 import com.wind.yuanbin.demo.R;
+import com.wind.yuanbin.demo.utils.L;
 
 import java.util.ArrayList;
 import java.util.List;

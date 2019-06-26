@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.wind.yuanbin.demo.waterfall.StaggeredGridActivity;
 import com.wind.yuanbin.demo.waterfall.WaterfallActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
@@ -22,20 +23,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         button1 = findViewById(R.id.button1);
 
         button.setOnClickListener(this);
-        button.post(new Runnable() {
-            @Override
-            public void run() {
-                int wid0 = button.getWidth();
-                int wid1 = textView.getWidth();
-                int wid2 = button1.getWidth();
+        button1.setOnClickListener(this);
+        button.post(() -> {
+            int wid0 = button.getWidth();
+            int wid1 = textView.getWidth();
+            int wid2 = button1.getWidth();
 
-                button.setText("match  " + wid0);
-                textView.setText("200dp:" + wid1);
-                button1.setText("100dp: " + wid2);
+            button.setText("match  " + wid0 + "to WaterFall");
+            textView.setText("200dp:" + wid1);
+            button1.setText("100dp: " + wid2);
 
-                // 1280*720  3/4
-                // 1920*1080 1/2
-            }
+            // 1280*720  3/4
+            // 1920*1080 1/2
         });
     }
 
@@ -44,6 +43,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switch (v.getId()){
             case R.id.button:
                 WaterfallActivity.toWaterfall(this);
+                break;
+            case R.id.button1:
+                StaggeredGridActivity.toSA(this);
                 break;
         }
     }

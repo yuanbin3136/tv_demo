@@ -8,15 +8,13 @@ import android.util.AttributeSet;
 import android.view.View;
 import android.widget.AbsListView;
 
-import com.wind.yuanbin.demo.utils.L;
-
 public class RecyclerView_FocusChild extends RecyclerView {
     public RecyclerView_FocusChild(@NonNull Context context) {
         this(context,null);
     }
 
     public RecyclerView_FocusChild(@NonNull Context context, @Nullable AttributeSet attrs) {
-        this(context,null,0);
+        this(context,attrs,0);
     }
 
     public RecyclerView_FocusChild(@NonNull Context context, @Nullable AttributeSet attrs, int defStyle) {
